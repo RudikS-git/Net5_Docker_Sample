@@ -1,0 +1,20 @@
+{
+  "Routes": [
+    {
+      "DownstreamPathTemplate": "/api/values/get",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "test_api",
+          "Port": 80
+        }
+      ],
+      "UpstreamPathTemplate": "/api/values/get",
+      "UpstreamHttpMethod": [ "Get" ]
+    }
+  ],
+  "GlobalConfiguration": {
+    "BaseUrl": "https://localhost:443"
+  },
+  "DangerousAcceptAnyServerCertificateValidator": true
+}
